@@ -1,9 +1,11 @@
 'use strict'
 
 function one() {
-  let num = 33;
+  let num = Math.random();
+  num = num * 100;
+  num = Math.ceil(num);
 console.log(num);
-  function two() {
+ function two() {
     let question = +prompt('Угадай число от 1 до 100');  
     console.log(question);
       function tree() {
@@ -13,9 +15,9 @@ console.log(num);
           alert('Загаданное число больше');
         } else if (question === null) {
           alert('Игра окончена!');
-        } else if (question === 33) {
+        } else if (question === num) {
           alert('Поздравляю, Вы угадали!!!');
-        } else if (question === NaN) {
+        } else if (question != isFinite) {
           alert('Введи число!');
         }
 
